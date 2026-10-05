@@ -15,9 +15,9 @@ jobs:
       pull-requests: read # Required to read the pull request
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@<commit-sha> # v6.0.2
+        uses: actions/checkout@v6.0.2
       - name: Run Axe Linter
-        uses: dequelabs/axe-linter-action@<commit-sha> # v2.x.y
+        uses: dequelabs/axe-linter-action@v2.0.0 # v2.x.y
         with:
           api_key: ${{ secrets.AXE_LINTER_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
